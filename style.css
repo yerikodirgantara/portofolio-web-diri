@@ -1,0 +1,134 @@
+/* style.css */
+
+/* Global Styles */
+body {
+  background-color: #f0f7fc;
+  /* Warna utama monokrom */
+  margin-bottom: 100px;
+  /* Menyesuaikan tinggi footer */
+}
+
+.nav-link:hover,
+.btn:hover {
+  background-color: #0088ff;
+  /* Warna latar saat hover (abu-abu) */
+  color: #000000;
+  /* Warna teks saat hover (putih) */
+}
+
+/* Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+
+/* Navbar Text Color */
+.navbar-nav .nav-link {
+  color: #000000;
+  /* Warna teks navbar */
+}
+
+/* Navbar Text Color on Hover */
+.navbar-nav .nav-link:hover {
+  color: #6c757d;
+  /* Warna teks navbar saat hover */
+}
+
+/* Landing Section */
+.landing {
+  position: relative;
+  height: calc(115vh - 100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: end;
+  background-image: url('TI\ USM.jpg');
+  /* Ganti 'background-image.jpg' dengan URL gambar latar belakang Anda */
+  background-size: cover;
+  background-position: center;
+  color: rgb(255, 255, 255);
+  padding: 20px;
+}
+
+/* About Section */
+#about {
+  background-color: #fff;
+  /* Warna latar belakang (putih) */
+  padding: 50px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  /* Efek bayangan */
+}
+
+/* Projects Section */
+#projects {
+  background-color: #f9f9f9;
+  /* Warna latar belakang (abu-abu muda) */
+  padding: 50px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  /* Efek bayangan */
+}
+
+.card {
+  margin-bottom: 30px;
+  border: 1px solid #e0e0e0;
+}
+
+.project-button {
+  margin-top: 15px;
+}
+
+/* Form Section */
+form {
+  background-color: #fff;
+  /* Warna latar belakang (putih) */
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.944);
+  /* Efek bayangan */
+}
+
+/* Footer Section */
+.footer {
+  background-color: #000000;
+  /* Warna footer (abu-abu gelap) */
+  color: #fff;
+  /* Warna teks footer (putih) */
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.footer-icons a {
+  color: #ffffff;
+  /* Warna ikon (putih) */
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+.footer-icons a:hover {
+  color: #007bff;
+  /* Warna ikon saat hover (biru) */
+}
+
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: #000000;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-icons {
+  margin-bottom: 10px;
+  /* Jarak antara ikon sosial media dengan teks di footer */
+}
+
+.footer p {
+  margin-bottom: 0;
+  /* Menghilangkan margin bawah pada teks di footer */
+}

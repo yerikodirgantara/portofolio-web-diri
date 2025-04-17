@@ -199,8 +199,9 @@
     const templateID = "template_9xot8hl"; // Ganti dengan Template ID kamu
 
     const params = {
-      nama: document.getElementById("nama").value,
-      message: document.getElementById("pesan").value
+      name: document.getElementById("nama").value,
+      message: document.getElementById("pesan").value,
+      time: new Date().toLocaleString()
     };
 
     emailjs.send(serviceID, templateID, params)

@@ -8,10 +8,110 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Navbar custom styling */
+    .navbar {
+      background-color: #343a40;
+    }
+    .navbar-brand,
+    .nav-link {
+      color: #f8f9fa !important;
+    }
+    .nav-link:hover {
+      color: #f0a500 !important;
+    }
+    .navbar-toggler-icon {
+      background-color: #f8f9fa;
+    }
+
+    /* Section styling */
+    .landing {
+      background: linear-gradient(to right, #6a11cb, #2575fc);
+      color: white;
+      padding: 80px 0;
+    }
+
+    .landing h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    .landing h2 {
+      font-size: 2rem;
+      margin-top: 10px;
+    }
+
+    .landing p {
+      font-size: 1.2rem;
+      margin-top: 20px;
+    }
+
+    .btn-primary {
+      background-color: #f0a500;
+      border: none;
+    }
+
+    /* About Section */
+    #about {
+      padding: 60px 0;
+      background-color: #f4f4f9;
+    }
+
+    /* Projects Section */
+    #projects {
+      padding: 60px 0;
+    }
+
+    .card {
+      border: none;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card-img-top {
+      border-radius: 8px 8px 0 0;
+    }
+
+    .card-body {
+      padding: 20px;
+    }
+
+    .project-button {
+      background-color: #f0a500;
+      border: none;
+      color: white;
+    }
+
+    /* Footer styling */
+    .footer {
+      background-color: #343a40;
+      color: white;
+      padding: 20px;
+    }
+
+    .footer a {
+      color: #f0a500;
+      margin-right: 15px;
+    }
+
+    .footer a:hover {
+      color: #ffffff;
+    }
+
+    .footer p {
+      margin: 10px 0 0;
+    }
+  </style>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container">
       <a class="navbar-brand" href="#">Portofolio</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -34,37 +134,39 @@
     </div>
   </nav>
 
+  <!-- Landing Section -->
   <section id="home" class="landing">
     <div class="container">
       <div class="landing-text text-center my-5">
-        <h1>Welcome to Portofolio</h1>
+        <h1>Welcome to My Portofolio</h1>
         <h2>Veren Yeriko Dirgantara</h2>
         <p>Ini adalah Hasil Karya dan Keterampilan Portofolio Saya.</p>
-        <a href="#projects" class="btn btn-primary">Projects</a>
+        <a href="#projects" class="btn btn-primary">Explore My Projects</a>
       </div>
     </div>
   </section>
 
+  <!-- About Section -->
   <section id="about" class="container mt-5">
-    <h2>Tentang Saya</h2>
+    <h2 class="text-center">Tentang Saya</h2>
     <p>
-      Perkenalkan saya Veren Yeriko Dirgantara. Saya seorang mahasiswa Teknik Informatika di Universitas
-      Semarang. Keterampilan saya adalah mendesain antarmuka sebuah web, membuat database dan saya mempunyai hobi
-      Fotografi.
-      Berikut ini adalah hasil proyek-proyek saya yang pernah saya kerjakan
+      Perkenalkan saya Veren Yeriko Dirgantara, mahasiswa Teknik Informatika di Universitas Semarang. Saya memiliki
+      keterampilan dalam mendesain antarmuka web, mengelola database, dan memiliki hobi fotografi. Berikut ini adalah
+      proyek-proyek yang telah saya kerjakan.
     </p>
   </section>
 
+  <!-- Projects Section -->
   <section id="projects" class="container mt-5">
-    <h2>Projects</h2>
+    <h2 class="text-center">Projects</h2>
     <div class="row">
       <div class="col-md-4 mb-4">
         <div class="card">
           <img src="foto.jpg" class="card-img-top" alt="Project 1">
           <div class="card-body">
             <h5 class="card-title">Project Photography</h5>
-            <p class="card-text">Berikut adalah Hasil job waktu di Bukit Diponegoro</p>
-            <button class="btn btn-outline-dark project-button" data-bs-toggle="modal" data-bs-target="#projectModal1">More Info</button>
+            <p class="card-text">Hasil foto perpisahan di Bukit Diponegoro</p>
+            <button class="btn project-button" data-bs-toggle="modal" data-bs-target="#projectModal1">More Info</button>
           </div>
         </div>
       </div>
@@ -74,8 +176,8 @@
           <img src="database.png" class="card-img-top" alt="Project 2">
           <div class="card-body">
             <h5 class="card-title">Project Sistem Barang Makanan Ringan</h5>
-            <p class="card-text">Berikut adalah Hasil Membuat database Makanan ringan (CRUD)</p>
-            <button class="btn btn-outline-dark project-button" data-bs-toggle="modal" data-bs-target="#projectModal3">More Info</button>
+            <p class="card-text">CRUD Database untuk makanan ringan</p>
+            <button class="btn project-button" data-bs-toggle="modal" data-bs-target="#projectModal3">More Info</button>
           </div>
         </div>
       </div>
@@ -84,29 +186,26 @@
         <div class="card">
           <img src="Project KB & TK.png" class="card-img-top" alt="Project TK">
           <div class="card-body">
-            <h5 class="card-title">Project TK</h5>
-            <p class="card-text">Proyek ini adalah pembuatan sistem untuk KB & TK Bintang Kasih menggunakan Vue.js.</p>
-            <button class="btn btn-outline-dark project-button" data-bs-toggle="modal" data-bs-target="#projectModalTK">More Info</button>
+            <h5 class="card-title">Project KB & TK</h5>
+            <p class="card-text">Sistem pendaftaran menggunakan Vue.js untuk TK Bintang Kasih</p>
+            <button class="btn project-button" data-bs-toggle="modal" data-bs-target="#projectModalTK">More Info</button>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Modal Project 1 -->
+  <!-- Modals for Projects -->
+  <!-- Modal 1 -->
   <div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="projectModal1Label" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="projectModal1Label">Deskripsi Project</h5>
+          <h5 class="modal-title" id="projectModal1Label">Deskripsi Project Photography</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <p>
-            Sebagai seorang fotografer, saya sering menerima berbagai pesanan dari berbagai klien,
-            mulai dari acara keluarga, pernikahan, hingga kegiatan sekolah. Salah satu pesanan tersebut berasal dari siswa SMA yang ingin mengabadikan
-            momen spesial perpisahan terakhir mereka bersama teman-teman selama di Bukit Diponegoro.
-          </p>
+          <p>Saya mengabadikan momen perpisahan siswa SMA di Bukit Diponegoro dengan hasil foto yang memuaskan.</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -115,7 +214,7 @@
     </div>
   </div>
 
-  <!-- Modal Project 3 -->
+  <!-- Modal 3 -->
   <div class="modal fade" id="projectModal3" tabindex="-1" aria-labelledby="projectModal3Label" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
@@ -124,10 +223,7 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <p>
-            Proyek ini bertujuan untuk membuat dan mengelola database makanan ringan menggunakan REST API dan JWT.
-            Pengguna dapat melakukan CRUD data makanan ringan dengan autentikasi aman.
-          </p>
+          <p>Proyek untuk membuat dan mengelola database makanan ringan dengan API dan autentikasi JWT.</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -136,23 +232,20 @@
     </div>
   </div>
 
-  <!-- Modal Project TK -->
+  <!-- Modal TK -->
   <div class="modal fade" id="projectModalTK" tabindex="-1" aria-labelledby="projectModalTKLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="projectModalTKLabel">Proyek KB & TK Menggunakan Vue.js</h5>
+          <h5 class="modal-title" id="projectModalTKLabel">Proyek TK Bintang Kasih</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <p>
-            Sistem ini bertujuan untuk mempermudah pengelolaan data pendaftaran siswa, orang tua, serta pembayaran.
-            Dibangun menggunakan Vue.js dan Laravel 10.
-          </p>
+          <p>Sistem pendaftaran dan pembayaran siswa menggunakan Vue.js dan Laravel.</p>
           <ul>
-            <li>Formulir pendaftaran siswa yang responsif dan terintegrasi dengan local storage.</li>
-            <li>Backend Laravel dengan pendekatan MVC.</li>
-            <li>Tampilan modern dan mudah digunakan.</li>
+            <li>Formulir pendaftaran responsif</li>
+            <li>Backend Laravel dengan pendekatan MVC</li>
+            <li>Tampilan modern dan mudah digunakan</li>
           </ul>
         </div>
         <div class="modal-footer">
@@ -163,20 +256,17 @@
   </div>
 
   <!-- Footer -->
-  <footer class="footer mt-5 bg-light text-center py-4">
+  <footer class="footer text-center py-4">
     <div class="container">
-      <div class="mb-3">
-        <a href="https://www.instagram.com/yerikodirgantara/" target="_blank" class="me-3"><i class="fab fa-instagram fa-lg"></i></a>
-        <a href="https://www.facebook.com/profile.php?id=100007986216408" target="_blank" class="me-3"><i class="fab fa-facebook fa-lg"></i></a>
-        <a href="https://github.com/yerikodirgantara" target="_blank"><i class="fab fa-github fa-lg"></i></a>
-      </div>
-      <p class="mb-0">&copy; 2024 Veren Yeriko Dirgantara. All rights reserved.</p>
+      <a href="https://www.instagram.com/yerikodirgantara/" target="_blank"><i class="fab fa-instagram fa-lg me-3"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=100007986216408" target="_blank"><i class="fab fa-facebook fa-lg me-3"></i></a>
+      <a href="https://github.com/yerikodirgantara" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+      <p class="mt-2">&copy; 2024 Veren Yeriko Dirgantara. All rights reserved.</p>
     </div>
   </footer>
 
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="script.js"></script>
-  
 </body>
+
 </html>

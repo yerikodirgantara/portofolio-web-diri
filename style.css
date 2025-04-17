@@ -94,10 +94,9 @@ form {
 
 /* Footer Section */
 .footer {
-  background-color: #000000;
+  background-color: #f83030;
   /* Warna footer (abu-abu gelap) */
-  color: #000000;
-  /* Warna teks footer (putih) */
+  color: #1e2832;
   padding: 20px 0;
   text-align: center;
   width: 100%;

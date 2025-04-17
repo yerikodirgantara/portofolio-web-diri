@@ -178,9 +178,14 @@
       <label for="message" class="form-label">Pesan</label>
       <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
     </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Email</label>
+      <input type="email" class="form-control" id="email" name="email" required>
+    </div>
     <button type="submit" class="btn btn-dark">Kirim</button>
   </form>
 </section>
+
 
 
   <!-- Footer -->
@@ -201,30 +206,30 @@
 <!-- Scripts -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script>
-document.getElementById("form").addEventListener("submit", function(e) {
-  e.preventDefault();
+  document.getElementById("contact-form").addEventListener("submit", function(e) {
+    e.preventDefault();
 
-  const serviceID = "service_c02wmoe";   // <- ganti sama service ID kamu
-  const templateID = "template_9xot8hl"; // <- ganti sama template ID kamu
+    const serviceID = "service_c02wmoe";   // <- ganti sama service ID kamu
+    const templateID = "template_9xot8hl"; // <- ganti sama template ID kamu
 
-  const params = {
-    title: document.getElementById("title").value,
-    name: document.getElementById("name").value,
-    time: document.getElementById("time").value,
-    message: document.getElementById("message").value,
-    email: document.getElementById("email").value
-  };
+    const params = {
+      title: document.getElementById("title").value,
+      name: document.getElementById("name").value,
+      time: document.getElementById("time").value,
+      message: document.getElementById("message").value,
+      email: document.getElementById("email").value
+    };
 
-  emailjs.send(serviceID, templateID, params)
-    .then((response) => {
-      console.log("SUCCESS!", response.status, response.text);
-      alert("Email berhasil dikirim!");
-      document.getElementById("form").reset();
-    }, (error) => {
-      console.log("FAILED...", error);
-      alert("Gagal mengirim email. Coba lagi ya.");
-    });
-});
+    emailjs.send(serviceID, templateID, params)
+      .then((response) => {
+        console.log("SUCCESS!", response.status, response.text);
+        showSuccessToast();
+        document.getElementById("contact-form").reset();
+      }, (error) => {
+        console.log("FAILED...", error);
+        alert("Gagal mengirim email. Coba lagi ya.");
+      });
+  });
 
   function showSuccessToast() {
     const toastHTML = `

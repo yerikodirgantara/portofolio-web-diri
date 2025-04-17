@@ -47,6 +47,7 @@ body {
   
   /* Ganti 'background-image.jpg' dengan URL gambar latar belakang Anda */
   background-size: cover;
+  background-image: url('TI\ USM.jpg');
   background-position: center;
   color: rgb(255, 255, 255);
   padding: 20px;
@@ -95,7 +96,7 @@ form {
 .footer {
   background-color: #000000;
   /* Warna footer (abu-abu gelap) */
-  color: #fff;
+  color: #000000;
   /* Warna teks footer (putih) */
   padding: 20px 0;
   text-align: center;

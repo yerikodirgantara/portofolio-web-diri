@@ -159,31 +159,28 @@
   </div>
 
   <!-- Contact -->
-<section id="contact" class="container mt-5">
-  <h2 class="mb-4">Kirim Pesan</h2>
-  <form id="contact-form">
-    <div class="mb-3">
-      <label for="title" class="form-label">Judul</label>
-      <input type="text" class="form-control" id="title" name="title" required>
+  <form id="form">
+    <div class="field">
+      <label for="title">Title</label>
+      <input type="text" name="title" id="title" required>
     </div>
-    <div class="mb-3">
-      <label for="name" class="form-label">Nama</label>
-      <input type="text" class="form-control" id="name" name="name" required>
+    <div class="field">
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" required>
     </div>
-    <div class="mb-3">
-      <label for="time" class="form-label">Waktu</label>
-      <input type="datetime-local" class="form-control" id="time" name="time" required>
+    <div class="field">
+      <label for="time">Time</label>
+      <input type="text" name="time" id="time" required>
     </div>
-    <div class="mb-3">
-      <label for="message" class="form-label">Pesan</label>
-      <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+    <div class="field">
+      <label for="message">Message</label>
+      <input type="text" name="message" id="message" required>
     </div>
-    <div class="mb-3">
-      <label for="email" class="form-label">Email</label>
-      <input type="email" class="form-control" id="email" name="email" required>
+    <div class="field">
+      <label for="email">Email</label>
+      <input type="text" name="email" id="email" required>
+    <input type="submit" id="button" value="Send Email">
     </div>
-    <button type="submit" class="btn btn-dark">Kirim</button>
-  </form>
 </section>
 
 

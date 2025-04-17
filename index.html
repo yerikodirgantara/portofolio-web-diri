@@ -198,11 +198,15 @@
   const serviceID = "service_c02wmoe";   
   const templateID = "template_9xot8hl"; 
 
-  const params = {
-    name: document.getElementById("nama").value,
-    message: document.getElementById("pesan").value,
-    time: new Date().toLocaleString() // ini yang kurang!
-  };
+  const nama = document.getElementById("nama").value;
+  const pesan = document.getElementById("pesan").value;
+
+const params = {
+  name: nama,
+  message: pesan,
+  time: new Date().toLocaleString(),
+  title: `Pesan dari ${nama}` // ini buat subject-nya
+};
 
   emailjs.send(serviceID, templateID, params)
   .then(function (response) {

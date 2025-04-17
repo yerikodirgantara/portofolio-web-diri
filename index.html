@@ -159,7 +159,7 @@
   </div>
 
   <section id="contact" class="container mt-5">
-    <h2 class="mb-4">Kirim Pesan</h2>
+    <h2 class="mb-4">Kirim Email</h2>
     <form id="form">
       <div class="mb-3">
         <label for="title" class="form-label">Title</label>
@@ -212,6 +212,7 @@
         .then(() => {
           btn.value = 'Send Email'; // Kembalikan tombol ke status awal
           alert('Email berhasil dikirim!'); // Tampilkan alert sukses
+          document.getElementById("form").reset(); // Reset form setelah pengiriman berhasil
         }, (err) => {
           btn.value = 'Send Email'; // Kembalikan tombol ke status awal
           alert('Gagal mengirim email. Error: ' + JSON.stringify(err)); // Tampilkan alert error

@@ -3,24 +3,21 @@
 /* Global Styles */
 body {
   background-color: #f0f7fc;
-  /* Warna utama monokrom */
   margin-bottom: 100px;
-  /* Menyesuaikan tinggi footer */
 }
 
 .nav-link:hover,
 .btn:hover {
   background-color: #0088ff;
-  /* Warna latar saat hover (abu-abu) */
   color: #000000;
-  /* Warna teks saat hover (putih) */
 }
 
 /* Navbar */
 .navbar {
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 1000;
+  right: 100;
 }
 
 
@@ -35,6 +32,28 @@ body {
   color: #6c757d;
   /* Warna teks navbar saat hover */
 }
+
+#typewriter-text {
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-flex; /* flex untuk rata tengah vertikal */
+  align-items: center;  /* ini bikin cursor sejajar vertikal */
+  color: white;
+}
+
+.cursor {
+  display: inline-block;
+  margin-left: 2px;        /* jarak sedikit dari huruf */
+  font-weight: 500;
+  font-size: inherit;      /* sesuaikan ukuran dengan teks */
+  animation: blink 0.7s steps(1) infinite;
+  color: white;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
 
 /* Landing Section */
 .landing {

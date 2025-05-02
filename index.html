@@ -9,19 +9,10 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
   
- <!-- EmailJS -->
-  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-  <script>
-    (function () {
-      emailjs.init("TMAWTNRumtRET-ijy"); // Public Key kamu di sini
-    })();
-  </script>
-</head>
-
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
     <div class="container">
       <a class="navbar-brand" href="#">Portofolio</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -36,73 +27,83 @@
         </ul>
       </div>
     </div>
-  </nav>
+  </nav>  
 
   <!-- Home -->
-  <section id="home" class="landing">
-    <div class="container">
-      <div class="landing-text text-center my-5">
-        <h1>Welcome to Portofolio</h1>
-        <h2>Veren Yeriko Dirgantara</h2>
-        <p>Berikut Ini adalah Hasil Karya dan Keterampilan Portofolio Pribadi.</p>
-        <a href="#projects" class="btn btn-primary">Pengalaman</a>
-      </div>
+<section id="home" class="landing">
+  <div class="container">
+    <div class="landing-text text-end my-5">
+      <h1>
+        <span id="typewriter-text"></span><span class="cursor">|</span>
+      </h1>
+      <p>Berikut Ini adalah Hasil Karya dan Keterampilan Portofolio Pribadi.</p>
+      <a href="#projects" class="btn btn-primary mt-3">Pengalaman</a>
     </div>
-  </section>
+  </div>
+</section>
+
 
   <!-- Tentang Saya -->
   <section id="about" class="container mt-5">
     <h2>Tentang Saya</h2>
     <p>
-      Perkenalkan saya Veren Yeriko Dirgantara. Saya adalah lulusan Teknik
-      Informatika Tahun 2025 dari Universitas Semarang yang telah menyelesaikan studi S1 Teknik Informatika. Saya
-      memiliki minat dalam bidang pemrograman terkhusus dalam bidang Vue.Js dan Laravel.
-      Dengan pengalaman sebelumnya, saya telah mengembangkan berbagai keterampilan seperti kerja tim,
-      manajemen waktu, pengambilan keputusan, perencanaan acara, dan kemampuan beradaptasi. Selain
-      itu saya memiliki keterampilan khusus dalam bidang photografi dan videografi.
-      Berikut adalah hasil pengalaman kerja yang pernah saya kerjakan.
+      PPerkenalkan, saya Veren Yeriko Dirgantara. Saya adalah lulusan Teknik Informatika tahun 2025 dari Universitas Semarang yang telah menyelesaikan studi S1 di bidang Teknik Informatika. 
+      Saya memiliki minat dalam bidang Teknologi Informasi, baik dalam pengembangan web maupun instalasi software dan aplikasi. 
+      Dalam bidang instalasi software dan aplikasi, saya juga memiliki pengalaman di bidang pemahaman dasar tentang jaringan, seperti pengaturan IP address, konfigurasi router sederhana, serta pemecahan masalah konektivitas jaringan lokal. 
+      Dari pengalaman tersebut, saya mengembangkan berbagai keterampilan penting seperti kerja tim, manajemen waktu, pengambilan keputusan, perencanaan acara, dan kemampuan beradaptasi. 
+      Saya juga memiliki keahlian tambahan di bidang fotografi dan videografi yang mendukung kegiatan dokumentasi dan produksi media.
     </p>
   </section>
 
   <!-- Projects -->
-  <section id="projects" class="container mt-5">
-    <h2>Pengalaman Kerja</h2>
-    <div class="row">
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <img src="foto.jpg" class="card-img-top" alt="Project 1">
-          <div class="card-body">
-            <h5 class="card-title">Proyek Fotografi</h5>
-            <p class="card-text">Berikut ini adalah hasil job freelance saat di Bukit Diponegoro</p>
-            <button class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#projectModal1">Info Selengkapnya</button>
-          </div>
+<section id="projects" class="container mt-5">
+  <h2>Pengalaman Pribadi</h2>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card h-100">
+        <img src="foto.jpg" class="card-img-top" alt="Project 1">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Proyek Fotografi</h5>
+          <p class="card-text">Berikut ini adalah hasil job freelance saat di Bukit Diponegoro</p>
+          <button class="btn btn-outline-dark mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal1">Info Selengkapnya</button>
         </div>
       </div>
-
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <img src="database.png" class="card-img-top" alt="Project 2">
-          <div class="card-body">
-            <h5 class="card-title">Sistem Laravel Ketersediaan Barang Makanan Ringan</h5>
-            <p class="card-text">Database CRUD makanan ringan</p>
-            <button class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#projectModal3">Info Selengkapnya</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <img src="Project KB & TK.png" class="card-img-top" alt="Project TK">
-          <div class="card-body">
-            <h5 class="card-title">Proyek Website KB & TK Vue.js</h5>
-            <p class="card-text">Sistem KB & TK Bintang Kasih menggunakan Vue.js dan Laravel 10</p>
-            <button class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#projectModalTK">Info Selengkapnya</button>
-          </div>
-        </div>
-      </div>
-
     </div>
-  </section>
+
+    <div class="col">
+      <div class="card h-100">
+        <img src="database.png" class="card-img-top" alt="Project 2">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Sistem Laravel Ketersediaan Barang Makanan Ringan</h5>
+          <p class="card-text">Database CRUD makanan ringan</p>
+          <button class="btn btn-outline-dark mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal3">Info Selengkapnya</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <img src="Project KB & TK.png" class="card-img-top" alt="Project TK">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Proyek Website KB & TK Vue.js</h5>
+          <p class="card-text">Sistem KB & TK Bintang Kasih menggunakan Vue.js dan Laravel 10</p>
+          <button class="btn btn-outline-dark mt-auto" data-bs-toggle="modal" data-bs-target="#projectModalTK">Info Selengkapnya</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <img src="Instalasi.jpg" class="card-img-top" alt="Project 4">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Instalasi Software/Aplikasi Komputer dan Laptop</h5>
+          <p class="card-text">Melakukan instalasi perangkat keras dan perangkat lunak untuk komputer di laboratorium kampus dan praktikum saat menempuh pendidikan kuliah.</p>
+          <button class="btn btn-outline-dark mt-auto" data-bs-toggle="modal" data-bs-target="#projectModalInstallation">Info Selengkapnya</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
   <!-- Modals -->
   <div class="modal fade" id="projectModal1" tabindex="-1">
@@ -161,6 +162,24 @@
     </div>
   </div>
 
+<div class="modal fade" id="projectModalInstallation" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Instalasi Software/Aplikasi Komputer dan Laptop</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p>Saya memiliki pengalaman untuk menginstal perangkat keras dan perangkat lunak pada komputer yang digunakan oleh mahasiswa di laboratorium kampus.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
   
   <!-- Footer -->
   <section id="footer" class="footer mt-5 bg-light text-center py-4">
@@ -177,5 +196,47 @@
   
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
+  <script>
+    const words = ["Welcome to Portofolioo", "Veren Yeriko Dirgantaraa"];
+    let i = 0;
+    let j = 0;
+    let currentWord = '';
+    let isDeleting = false;
+    const speed = 100;
+    const target = document.getElementById("typewriter-text");
+
+    const typeSound = new Audio("https://www.soundjay.com/mechanical/typewriter-key-1.mp3");
+
+    function type() {
+      currentWord = words[i];
+
+      if (isDeleting) {
+        target.textContent = currentWord.substring(0, j--);
+      } else {
+        target.textContent = currentWord.substring(0, j++);
+        try {
+          typeSound.currentTime = 0;
+          typeSound.play();
+        } catch (e) {
+          // Ignore if autoplay blocked
+        }
+      }
+
+      if (!isDeleting && j === currentWord.length) {
+        isDeleting = true;
+        setTimeout(type, 1500);
+        return;
+      }
+
+      if (isDeleting && j === 0) {
+        isDeleting = false;
+        i = (i + 1) % words.length;
+      }
+
+      setTimeout(type, isDeleting ? speed / 2 : speed);
+    }
+
+    window.addEventListener('DOMContentLoaded', type);
+  </script>
 </body>
 </html>

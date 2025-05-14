@@ -166,3 +166,22 @@ html, body {
 .content {
   flex: 1;
 }
+
+.btn-download-cv {
+  background-color: #00c8ff;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-download-cv:hover {
+  background-color: #2a778d;
+  transform: scale(1.05);
+  color: #fff;
+  text-decoration: none;
+}

@@ -10,8 +10,6 @@
   <link rel="stylesheet" href="style.css" />
   
 <body>
-
-  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
     <div class="container">
       <a class="navbar-brand" href="#">Portofolio</a>
@@ -29,7 +27,6 @@
     </div>
   </nav>  
 
-  <!-- Home -->
 <section id="home" class="landing">
   <div class="container">
     <div class="landing-text text-end my-5">
@@ -45,33 +42,19 @@
   </div>
 </section>
 
-
-  <!-- Tentang Saya -->
   <section id="about" class="container mt-5">
     <h2>Tentang Saya</h2>
     <p>
       Perkenalkan, saya Veren Yeriko Dirgantara. Saya adalah lulusan Teknik Informatika tahun 2025 dari Universitas Semarang yang telah menyelesaikan studi S1 di bidang Teknik Informatika. 
       Saya memiliki minat dalam bidang Teknologi Informasi, baik dalam pengembangan web maupun instalasi software dan aplikasi. 
       Dalam bidang instalasi software dan aplikasi, saya juga memiliki pengalaman di bidang pemahaman dasar tentang jaringan, seperti pengaturan IP address, konfigurasi router sederhana, serta pemecahan masalah konektivitas jaringan lokal. 
-      Dari pengalaman tersebut, saya mengembangkan berbagai keterampilan penting seperti kerja tim, manajemen waktu, pengambilan keputusan, dan kemampuan beradaptasi. 
-      Saya juga memiliki keahlian tambahan di bidang fotografi dan videografi yang mendukung kegiatan dokumentasi dan produksi media.
+      Dari pengalaman tersebut, saya mengembangkan berbagai keterampilan penting seperti kerja tim, manajemen waktu, pengambilan keputusan, dan kemampuan beradaptasi.
     </p>
   </section>
 
-  <!-- Projects -->
 <section id="projects" class="container mt-5">
   <h2>Portofolio Pribadi</h2>
   <div class="row row-cols-1 row-cols-md-3 g-4">
-    <div class="col">
-      <div class="card h-100">
-        <img src="foto.jpg" class="card-img-top" alt="Project 1">
-        <div class="card-body d-flex flex-column">
-          <h5 class="card-title">Proyek Fotografi</h5>
-          <p class="card-text">Berikut ini adalah hasil job freelance saat di Bukit Diponegoro</p>
-          <button class="btn btn-outline-dark mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal1">Info Selengkapnya</button>
-        </div>
-      </div>
-    </div>
 
     <div class="col">
       <div class="card h-100">
@@ -105,65 +88,58 @@
         </div>
       </div>
     </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <img src="flutter.jpg" class="card-img-top" alt="Project Absensi Flutter">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Aplikasi Absensi Flutter + Firebase</h5>
+          <p class="card-text">Aplikasi mobile absensi menggunakan Flutter dengan backend Firebase Realtime Database.</p>
+          <button class="btn btn-outline-dark mt-auto" data-bs-toggle="modal" data-bs-target="#projectModalFlutter">Info Selengkapnya</button>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
-  <!-- Modals -->
-  <div class="modal fade" id="projectModal1" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Proyek Fotografi</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-        </div>
-        <div class="modal-body">
-          <p>Saya menerima order foto outdoor siswa SMA pada saat acara perpisahan di Bukit Diponegoro Semarang.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        </div>
+<div class="modal fade" id="projectModal3" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Sistem Laravel Ketersediaan Barang Makanan Ringan</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p>Mengelola database makanan ringan dengan CRUD dan autentikasi JWT (REST API).</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
+</div>
 
-  <div class="modal fade" id="projectModal3" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Sistem Laravel Ketersediaan Barang Makanan Ringan</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-        </div>
-        <div class="modal-body">
-          <p>Mengelola database makanan ringan dengan CRUD dan autentikasi JWT (REST API).</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        </div>
+<div class="modal fade" id="projectModalTK" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Proyek Website KB & TK Vue.js</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p>Mengelola data siswa, orang tua, dan pembayaran dengan menggunakan Vue.js + Laravel 10.</p>
+        <ul>
+          <li>Mendesain tampilan landing page, formulir, dan pembayaran Pendaftaran yang responsive untuk orang tua siswa</li>
+          <li>Menggunakan Laravel 10 dengan konsep MVC (Model-View-Controller)</li>
+          <li>Proyek ini digunakan sebagai bahan Tugas Akhir atau Skripsi</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
-
-  <div class="modal fade" id="projectModalTK" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Proyek Website KB & TK Vue.js</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-        </div>
-        <div class="modal-body">
-          <p>Mengelola data siswa, orang tua, dan pembayaran dengan menggunakan Vue.js + Laravel 10.</p>
-          <ul>
-            <li>Mendesain tampilan landing page, formulir, dan pembayaran Pendaftaran yang responsive untuk orang tua siswa</li>
-            <li>Menggunakan Laravel 10 dengan konsep MVC (Model-View-Controller)</li>
-            <li>Proyek ini digunakan sebagai bahan Tugas Akhir atau Skripsi</li>
-          </ul>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
+</div>
 
 <div class="modal fade" id="projectModalInstallation" tabindex="-1">
   <div class="modal-dialog modal-dialog-centered">
@@ -183,8 +159,30 @@
 </div>
 
 
-  
-  <!-- Footer -->
+<div class="modal fade" id="projectModalFlutter" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Aplikasi Absensi Flutter + Firebase</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p>Saya mengembangkan aplikasi absensi berbasis mobile menggunakan Flutter yang terhubung dengan Firebase Realtime Database.</p>
+        <ul>
+          <li>Fitur login untuk siswa dan admin</li>
+          <li>Penyimpanan data ke Firebase secara otomatis</li>
+          <li>Digunakan dalam praktik Mata Kuliah Pengembangan Aplikasi Mobile</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
   <section id="footer" class="footer mt-5 bg-light text-center py-4">
     <div class="container">
       <div class="mb-3">
@@ -195,69 +193,62 @@
     </div>
   </section>
 
-  <!-- Back to Top Button -->
   <button id="backToTop" class="btn btn-primary rounded-circle">
     <i class="fas fa-arrow-up"></i>
   </button>
   
-  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
   <script>
-    const words = ["Welcome to Portofolioo", "Veren Yeriko Dirgantaraa"];
-    let i = 0;
-    let j = 0;
-    let currentWord = '';
-    let isDeleting = false;
-    const speed = 120;
-    const target = document.getElementById("typewriter-text");
+  const words = ["Welcome to Portofolioo", "Veren Yeriko Dirgantaraa"];
+  let i = 0;
+  let j = 0;
+  let currentWord = '';
+  let isDeleting = false;
+  const speed = 120;
+  const target = document.getElementById("typewriter-text");
 
-    function type() {
-      currentWord = words[i];
+  function type() {
+    currentWord = words[i];
 
-      if (isDeleting) {
-        target.textContent = currentWord.substring(0, j--);
-      } else {
-        target.textContent = currentWord.substring(0, j++);
-        try {
-          typeSound.currentTime = 0;
-          typeSound.play();
-        } catch (e) {
-          // Ignore if autoplay blocked
-        }
-      }
-
-      if (!isDeleting && j === currentWord.length) {
-        isDeleting = true;
-        setTimeout(type, 1500);
-        return;
-      }
-
-      if (isDeleting && j === 0) {
-        isDeleting = false;
-        i = (i + 1) % words.length;
-      }
-
-      setTimeout(type, isDeleting ? speed / 2 : speed);
+    if (isDeleting) {
+      target.textContent = currentWord.substring(0, j--);
+    } else {
+      target.textContent = currentWord.substring(0, j++);
+      // Suara dihapus di sini, tidak ada lagi typeSound.play()
     }
 
-    window.addEventListener('DOMContentLoaded', type);
-    // Back to Top logic
-    const backToTopBtn = document.getElementById("backToTop");
-    window.addEventListener("scroll", function () {
-      if (window.scrollY > 300) {
-        backToTopBtn.style.display = "block";
-      } else {
-        backToTopBtn.style.display = "none";
-      }
-    });
+    if (!isDeleting && j === currentWord.length) {
+      isDeleting = true;
+      setTimeout(type, 1500);
+      return;
+    }
 
-    backToTopBtn.addEventListener("click", function () {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-      });
+    if (isDeleting && j === 0) {
+      isDeleting = false;
+      i = (i + 1) % words.length;
+    }
+
+    setTimeout(type, isDeleting ? speed / 2 : speed);
+  }
+
+  window.addEventListener('DOMContentLoaded', type);
+
+  const backToTopBtn = document.getElementById("backToTop");
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 300) {
+      backToTopBtn.style.display = "block";
+    } else {
+      backToTopBtn.style.display = "none";
+    }
+  });
+
+  backToTopBtn.addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
     });
-  </script>
+  });
+</script>
 </body>
 </html>
